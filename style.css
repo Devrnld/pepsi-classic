@@ -1,0 +1,371 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    background-color: #070a4e;
+    color: #fff;
+    
+}
+
+.conteiner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid #000;*/
+    width: 900px;
+    height: 400px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 170px;
+    margin-right: 0px;
+    box-shadow: 0px 0px 50px black;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.logo-pepsi img{
+    position: absolute;
+    z-index: 1;
+    left: 60px;
+    top: 10px;
+    width: 90px;
+    height: 70px;
+}
+
+.navegacao {
+    margin-left: 140px;
+    position: absolute;
+    top: 27px;
+}
+.navegacao a {
+    z-index: 2;
+    text-decoration: none; 
+    color: #fff;
+    font-size: 10px;
+}
+
+ .nav {
+    margin-right: 40px;
+}
+
+.comprar {
+    border-radius: 999px;
+    border: #fff solid 1px;
+    padding: 8px 40px;
+}
+
+.sombra-site {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+}
+
+.sombra-site img {
+    border-radius: 15px;
+    width: 700px;
+    height: 300px;
+
+}
+
+.icones {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+}
+
+.icones img {
+    width: 15px;
+    height: 130px;
+}
+
+.conteudo {
+    position: absolute;
+    left: 85px;
+    top: 160px;
+    width: 380px;
+}
+
+
+.conteudo p {
+    font-size: 12px;
+    margin-bottom: .5rem;
+}
+
+.conteudo h2 {
+    font-size: .7rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.conteudo img {
+    width: 60px;
+    height: auto;
+    margin-right: 8px;
+    
+}
+
+.btn {
+    position: absolute;
+    left: 85px;
+    top: 340px;
+    
+    
+}
+
+button {
+    background-color: transparent;
+    border-radius: 999px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 10px;
+}
+
+
+.lata-grande {
+    z-index: 2;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    width: 210px;
+    height: 250px;
+}
+
+.lata-pequena {
+    z-index: 1;
+    position: absolute;
+    top: 112px;
+    right: 160px;
+    width: 110px;
+    height: 180px;
+
+}
+
+.sombra-latas {
+    position: absolute;
+    width: 400px;
+    top: 260px;
+    right: 100px;
+    z-index: 0;
+
+}
+
+.info-latas {
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 15px;
+}
+
+.pepsi-classic {
+    position: absolute;
+    left: 85px;
+    top: 80px;
+    width: 500px;
+  
+}
+
+.pepsi-classic h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.pepsi-classic p {
+    font-size: 12px;
+    margin-bottom: .5rem;
+}
+
+@media screen and (max-width: 500px) {
+    .conteiner{
+        border: none;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        display: inline;
+        align-items: none;
+        justify-content: nione;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        box-shadow: 0px 0px 50px black;
+        
+    }
+
+    .logo-pepsi img{
+        position: absolute;
+        z-index: 1;
+        left: 45vw;
+        top: 10px;
+        width: 90px;
+        height: 60px;
+    }
+
+    .navegacao {
+        width: 100vw;
+        margin-left: 20px;
+        position: absolute;
+        top: 60px;
+        display: flex;
+    }
+
+    .navegacao a {
+        z-index: 2;
+        text-decoration: none; 
+        color: #fff;
+        font-size: 8px;
+        
+    }
+
+    .nav {
+        margin-right: 15px;
+    }
+
+    .comprar {
+        border-radius: 999px;
+        border: #fff solid 1px;
+        padding: 4px 20px;
+    }
+
+    .pepsi-classic {
+        position: absolute;
+        top: 100px;
+        width: 100vw;
+        left: 0;
+    }
+
+    .pepsi-classic h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .pepsi-classic p {
+        font-size: 12px;
+        text-align: start;
+        margin-left: 10px;
+        
+    }
+
+    .icones img {
+        width: 15px;
+        height: 130px;
+    }
+
+    .icones {
+        position: absolute;
+        z-index: 1;
+        left: 10px;
+        top: 500px;
+    }
+
+    .conteudo {
+        position: absolute;
+        top: 190px;
+        width: 100vw;
+        text-align: start;
+        left: 20px;
+    }
+    
+    
+    .conteudo p {
+        font-size: 12px;
+        margin-bottom: 1.5rem;
+        
+
+    }
+    
+    .conteudo h2 {
+        font-size: .9rem;
+        margin-top: 1.5rem;
+        margin-bottom: .7rem;
+        font-weight: bold;
+        text-align: start;
+        margin-left: 10px;
+    }
+    
+    .conteudo img {
+        width: 60px;
+        height: auto;
+        left: 500px;
+        margin-left: 5px;
+        
+    }
+    
+    .btn {
+        position: absolute;
+        left: 32vw;
+        top: 370px;
+        width: 100vw;
+        display: flex;
+        justify-items: center;
+        
+        
+    }
+    
+    button {
+        background-color: transparent;
+        border-radius: 999px;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    .lata-grande {
+        z-index: 30;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        width: 200px;
+        height: 25px;
+    }
+    
+    .lata-pequena {
+        z-index: 4 ;
+        position: absolute;
+        top: 60px;
+        right: 160px;
+        width: 50px;
+        height: 80px;
+    
+    }
+    
+    .sombra-latas {
+        position: absolute;
+        width: 400px;
+        top: 260px;
+        right: 100px;
+        z-index: 0;
+    
+    }
+    
+    .info-latas {
+        position: absolute;
+        width: 70px;
+        height: 90px;
+        bottom: 0;
+        right: 0;
+        border-bottom-right-radius: 15px;
+    }
+    
+    
+
+    
+    
+
+
+}
